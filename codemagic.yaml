@@ -4,9 +4,16 @@ workflows:
     instance_type: mac_mini_m1
     max_build_duration: 30
     scripts:
-      - name: Build Android APK
+      - name: Locate and Build APK
         script: |
+          # Sahi folder dhoondo jahan gradlew file hai
+          GRADLE_DIR=$(find . -name "gradlew" -exec dirname {} \;)
+          if [ -z "$GRADLE_DIR" ]; then
+            echo "Error: gradlew file poori repo mein nahi mili!"
+            exit 1
+          fi
+          cd "$GRADLE_DIR"
           chmod +x gradlew
           ./gradlew assembleDebug
     artifacts:
-      - app/build/outputs/apk/**/*.apk
+      - "**/build/outputs/apk/**/*.apk"
