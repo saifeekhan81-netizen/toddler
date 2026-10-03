@@ -1,0 +1,6 @@
+{
+  "name": "TinyHands",
+  "description": "Safe interactive play mode for toddlers with protected sensory activities, hidden parent exit, and session timer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

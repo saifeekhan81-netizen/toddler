@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TinyHands</string>
+    <string name="app_subtitle">Safe Play for Toddlers</string>
+    <string name="start_safe_play">Start Safe Play</string>
+    <string name="safe_play_ready">Safe Play Ready</string>
+    <string name="parent_check">Parent Check</string>
+    <string name="enter_parent_pin">Enter 4-digit PIN</string>
+    <string name="forgot_pin">Forgot PIN?</string>
+    <string name="play_time_finished">Play time is finished</string>
+    <string name="add_five_minutes">Add 5 Minutes</string>
+</resources>
